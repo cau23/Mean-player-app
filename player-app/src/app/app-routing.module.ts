@@ -8,7 +8,7 @@ import { RegisterComponent } from './components/register/register.component';
 const appRoutes: Routes = [
   { 
   	path: '',   
-  	component: HomeComponent
+  	component: HomeComponent // Default Route
   },
   {
     path: 'dashboard',
@@ -16,9 +16,9 @@ const appRoutes: Routes = [
   },
   {
     path: 'register',
-    component: RegisterComponent 
+    component: RegisterComponent  // The register Route
   },
-  { path: '**', component: HomeComponent }
+  { path: '**', component: HomeComponent } // The "Catch-all" Route
 ];
 
 @NgModule({
